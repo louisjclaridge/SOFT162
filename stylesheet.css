@@ -1,0 +1,45 @@
+body
+{
+  background-color: #00bfff;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+
+header
+{
+  width: 100%;
+  height: 4%;
+  text-align: right;
+}
+
+footer
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+.mainbody
+{
+padding-top: 15%;
+width: 90%;
+margin: 0 auto;
+}
+
+.jobs
+{
+padding-top: 5%;
+width: 90%;
+margin: 0 auto;
+}
+
+.rowcolour
+{
+  color: black;
+}
+
+.modal
+{
+  color: black;
+}

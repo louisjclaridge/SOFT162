@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Careers App</title>
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="w3.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<script src="javascript.js"></script>
+<header class="w3-container w3-blue">
+<h1 class="w3-left">Careers App</h1>
+<p>Upload CV</p>
+</header>
+
+<body>
+<div id="jobs" class="jobs">
+<div class="w3-third filters">
+<h1><u>Filters</u></h1>
+<u><p>Search</p></u>
+<input id="search" placeholder="Search" onkeyup="search()"></input>
+
+<u><p>Arange By Distance</p></u>
+<button onclick="sortbylocation()">Sort</button>
+
+<p>Arange A-Z</p>
+<button onclick="sortAtoZ()">Sort</button>
+
+<p>Arange By Relevence</p>
+<button onclick="sortbyrelevance()">Sort</button>
+</div>
+<div id="results" class="w3-twothird">
+  <table id="table" class="w3-table-all table">
+    <tr id="tablecontent" class="w3-blue">
+      <th>Job</th>
+      <th>Location</th>
+      <th>Company</th>
+      <th>Wage</th>
+      <th>Learn More</th>
+      <tr id="row1" class="rowcolour">
+        <td>Senior Support Engineer</td>
+        <td>Location</td>
+        <td>Company</td>
+        <td>£32,500 - £37,500</td>
+        <td><button onclick="job7()">Learn More</button></td>
+      </tr>
+      <tr id="row2" class="rowcolour">
+        <td>Software Devloper</td>
+        <td>Location</td>
+        <td>Company</td>
+        <td>£29,500 - £32,500</td>
+        <td><button onclick="job1()">Learn More</button></td>
+      </tr>
+      <tr id="row3" class="rowcolour">
+        <td>Web Developer</td>
+        <td>Location</td>
+        <td>Company</td>
+        <td>DOE</td>
+        <td><button onclick="job3()">Learn More</button></td>
+      </tr>
+      <tr id="row4" class="rowcolour">
+        <td>Software Release Engineer</td>
+        <td>Location</td>
+        <td>Company</td>
+        <td>DOE</td>
+        <td><button onclick="job4()">Learn More</button></td>
+      </tr>
+      <tr id="row5" class="rowcolour">
+        <td>Javascript Developer</td>
+        <td>Location</td>
+        <td>Company</td>
+        <td>£20,000 - £40,000</td>
+        <td><button onclick="job5()">Learn More</button></td>
+      </tr>
+      <tr id="row6" class="rowcolour">
+        <td>Customer Services Manager</td>
+        <td>Location</td>
+        <td>Company</td>
+        <td>£42,000 - £52,000</td>
+        <td><button onclick="job6()">Learn More</button></td>
+      </tr>
+      <tr id="row7" class="rowcolour">
+        <td>Techincal Manager</td>
+        <td>Location</td>
+        <td>Company</td>
+        <td>£33,500 - £38,500</td>
+        <td><button onclick="job2()">Learn More</button></td>
+      </tr>
+</table>
+</div>
+</div>
+
+<!--Modal From https://www.w3schools.com/howto/howto_css_modals.asp-->
+<div id="id01" class="w3-modal modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id01').style.display='none';"
+      class="w3-button w3-display-topright">&times;</span>
+      <h2 id="modalheadertext">Some text in the Modal..</h2>
+      <p id="modalparatext">Some text in the Modal..</p>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+<footer class="w3-blue">
+<div id="footer" class="w3-container w3-center">
+<li>Contact Us</li>
+<li>About us</li>
+<li>Help</li>
+</div>
+</footer>
+
+
+</html>
